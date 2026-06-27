@@ -1,10 +1,10 @@
 import './App.css'
+import Codedexlekce02 from './02_JSX&Components/App'
 
 function App() {
   return (
     <div>
-      <h1>Tady začíná moje čistá aplikace!</h1>
-      <p>Ten obří kód je pryč.</p>
+      <Codedexlekce02 />
     </div>
   )
 }

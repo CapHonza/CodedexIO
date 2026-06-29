@@ -1,10 +1,10 @@
 import './App.css'
-import Codedexlekce03 from './03_Props&State/App'
+import Codedexlekce04 from './04_Events/App'
 
 function App() {
   return (
     <div>
-      <Codedexlekce03 />
+      <Codedexlekce04 />
     </div>
   )
 }

@@ -32,7 +32,5 @@ export default function App() {
   ];
   const [movieData] = useState(movieArray);
 
-  // code here 💖
-
   return <div><TrendingList movies={movieData} /></div>;
 }

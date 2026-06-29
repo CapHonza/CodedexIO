@@ -90,7 +90,7 @@ export default function EventInvitation() {
         <button
           tabIndex="0"
           className={`interested-button ${interestedHovered ? "hovered" : ""}`}
-          onClick={handleInterestedClick} onMouseEnter={handleInterestedMouseEnter} onMouseLeave={handleInterestedMouseLeave} tabIndex="0"
+          onClick={handleInterestedClick} onMouseEnter={handleInterestedMouseEnter} onMouseLeave={handleInterestedMouseLeave}
           onFocus={handleInterestedFocus} onBlur={handleInterestedBlur} onKeyDown={handleInterestedKeyDown} onKeyUp={handleInterestedKeyUp}
         >
           Interested ({interestedCount})
@@ -98,7 +98,7 @@ export default function EventInvitation() {
         <button
           tabIndex="0"
           className={`going-button ${goingHovered ? "hovered" : ""}`}
-          onClick={handleGoingClick} onMouseEnter={handleGoingMouseEnter} onMouseLeave={handleGoingMouseLeave} tabIndex="0"
+          onClick={handleGoingClick} onMouseEnter={handleGoingMouseEnter} onMouseLeave={handleGoingMouseLeave}
           onFocus={handleGoingFocus} onBlur={handleGoingBlur} onKeyDown={handleGoingKeyDown} onKeyUp={handleGoingKeyUp}
         >
           Going ({goingCount})

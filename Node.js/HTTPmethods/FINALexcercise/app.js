@@ -6,7 +6,10 @@ const server = http.createServer((request, response) => {
     if (request.method === 'GET') { // Když dostanu GET (prohlížeč) -> stačí v prohlížeči jít na localhost, zbytek terminál -> curl
         console.log(mood); // Nechám si to pro sebe vypsat i v konzoli
         response.writeHead(200, { 'Content-Type': 'text/plain' });
-        response.end(mood); // Vypíše čistě text v prohlížeči
+        response.end(mood || 'Mood is empty'); // Vypíše čistě text v prohlížeči
+        // * UPDATE: Přidán logický operátor OR (||) jako fallback hodnota
+        // * Pokud je mood 'null' (po DELETE), response.end() byvyhodilo chybu
+        // * Teď v takovém případě server bezpečně vrátí string 'Mood is empty'
     } else if (request.method === 'POST') {
         // Když chci přidat novou náladu, 
         // tak chci nastavit pokaždé mood na prázdný a zapsat novou

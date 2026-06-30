@@ -1,10 +1,10 @@
 import './App.css'
-import Codedexlekce04 from './04_Events/App'
+import Codedexlekce05 from './05_Forms/finalExercise/App.jsx'
 
 function App() {
   return (
     <div>
-      <Codedexlekce04 />
+      <Codedexlekce05 />
     </div>
   )
 }

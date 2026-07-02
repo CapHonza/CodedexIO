@@ -1,5 +1,5 @@
 import './App.css'
-import Codedexlekce05 from './06_Hooks/finalExercise/App.jsx'
+import Codedexlekce05 from './07_DataFetching/finalExercise/App.jsx'
 
 function App() {
   return (

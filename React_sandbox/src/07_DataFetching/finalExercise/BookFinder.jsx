@@ -10,7 +10,10 @@ export default function BookFinder() {
         setError(null);
 
         try {
-            const url = `https://www.googleapis.com/books/v1/volumes?q=${query}`;
+            //* API Key je v souboru .env v hlavní složce. Naimportuje se způsobem, jaký je v "const API_KEY=..."
+            //* Zároveň by se .env mělo dávat do .gitignore, aby se neposlalo nikam ven a běželo pouze na lokálu
+            const API_KEY = import.meta.env.VITE_GOOGLE_BOOKS_API_KEY; 
+            const url = `https://www.googleapis.com/books/v1/volumes?q=${query}&key=${API_KEY}`;
 
             const response = await fetch(url);
             if (!response.ok) {
